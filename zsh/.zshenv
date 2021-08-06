@@ -1,6 +1,10 @@
 # Rust
 source "$HOME/.cargo/env"
 
+# Deno
+export DENO_INSTALL="$HOME/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
+
 # Misc
 export PATH="$PATH:/$HOME/.local/bin"
 export VISUAL=vim
