@@ -15,9 +15,13 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 call plug#end()
 
+set number
 set tabstop=4 shiftwidth=4 
 
 nmap <C-P> :FZF<CR>
+nmap <C-T> :tabnew<CR>
+nmap <C-N> :NERDTreeToggle<CR>
+nmap <C-C> :Tagbar<CR>
 
 let g:coc_disable_startup_warning = 1
 
